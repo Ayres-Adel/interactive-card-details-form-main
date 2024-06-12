@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+--Primary_Linear_gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+--Primary_Red: hsl(0, 100%, 66%);
+
+--Neutral_White: hsl(0, 0%, 100%);
+--Neutral_Light_grayish_violet: hsl(270, 3%, 87%);
+--Dark_grayish_violet: hsl(279, 6%, 55%);
+--Very_dark_violet: hsl(278, 68%, 11%);
+
+--font-family: "Space Grotesk", sans-serif;
+
+--Font_size: 18px;
+
+--Weights: 500;
+
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--Font_size);
+    font-weight: var(--Weights);
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+}
+
+.card_front {
+    margin: 7rem 8rem;
+}
+
+.card_front_info {
+    display: grid;
+    margin-top: -14rem;
+    margin-left: 2rem;
+
+}
+
+.card_front_info > p {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    color: var(--Neutral_White);
+    font-size: 30px;
+}
+
+.card_front_info > div {
+    display: flex;
+    gap: 10rem;
+}
+
+.card_front_info > div > p {
+    color: var(--Neutral_White);
+
+}
+
+.card_back {
+    margin-top: -3rem;
+    margin-left: 12rem;
+}
+
+.card_back > p {
+    color: var(--Neutral_White);
+    margin-top: -9rem;
+    margin-left: 22rem;
+}
+
+.form_container {
+    display: grid;
+    gap: 5px;
+    font-size: 14px;
+    color: var(--Very_dark_violet);
+    margin-top: 10rem;
+}
+
+.form_container > p {
+    letter-spacing: 2px;
+}
+
+.form_container >input {
+    border:1px solid hsl(278, 94%, 30%);
+    background-color: white;
+    width: 25rem;
+    height: 2rem;
+    border-radius: 5px;
+    color: hsl(278, 94%, 30%);
+    margin-bottom: 35px;
+}
+
+.form_container_date > p {
+    margin-bottom: 10px;
+
+}
+
+
+.form_container >input::placeholder {
+    color: var(--Very_dark_violet);
+    padding-left: 10px;
+}
+
+.form_container_date {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form_container_date > input {
+    border:1px solid hsl(278, 94%, 30%);
+    background-color: white;
+    width: 4rem;
+    height: 2.2rem;
+    border-radius: 5px;
+    color: hsl(278, 94%, 30%);
+    margin-right: -50px; 
+}
+
+#year_cart {
+    width: 10rem;
+
+}
+
+.sumbit {
+    margin-top: 480px;
+    margin-left: -390px;
+    border: 1px solid hsl(278, 94%, 30%);
+    background-color: hsl(278, 94%, 30%);
+    width: 26rem;
+    height: 3rem;
+    border-radius: 5px;
+    color: var(--Neutral_White);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.sumbit:hover {
+    background-color: hsl(278, 94%, 40%);
+}
+
+.hidden_Section {
+    display: none;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.hidden_Section > h1 {
+    color: var(--Very_dark_violet);
+    letter-spacing: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.hidden_Section > p {
+    font-size: 15px;
+    color: var(--Dark_grayish_violet);
+}
+
+#error_Card_Name {
+    margin-top: -2rem;
+    color: var(--Primary_Red);
+}
+
+#error_Card_Number {
+    margin-top: -2rem;
+    color: var(--Primary_Red);
+}
+
+#error_Card_date_MM {
+    margin-top: 1rem;
+    color: var(--Primary_Red);
+}
+
+#error_Card_date_YY {
+    margin-top: 1rem;
+    color: var(--Primary_Red);
+}
+
+#error_Card_date_Year {
+    margin-top: 1rem;
+    color: var(--Primary_Red);
+}
+.sumbit_Continue {
+    border: 1px solid hsl(278, 94%, 30%);
+    background-color: hsl(278, 94%, 30%);
+    width: 26rem;
+    height: 3rem;
+    border-radius: 5px;
+    color: var(--Neutral_White);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 30px;
+}
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url("./images/bg-main-mobile.png");
+        background-repeat: no-repeat;
+        background-size: 30rem;
+    }
+    .card_front img {
+        margin-left: -120px;
+        margin-top: 45px;
+        width: 23rem;
+        z-index: 100;
+        
+    }
+    .card_front_info {
+        margin-left: -110px;
+        margin-top: -200px;
+        
+        
+    }
+    #Number_Card {
+        margin-top: 50px;
+        
+    }
+    .card_back img {
+        margin-left: -170px;
+        margin-top: 45px;
+        width: 23rem;
+
+    }
+    .card_back {
+        margin-top:-480px ;
+    }
+
+    .card_front, .card_back {
+        position: relative;
+    }
+    
+    .card_front {
+        z-index: 10;
+    }
+    
+    .card_back {
+        z-index: 5;
+    }
+    #cvc_number {
+        margin-left: 120px;
+        padding-top: 23px;
+    }
+    main {
+        display: grid;
+    }
+    .form_container {
+        padding-top: 9rem;
+        margin-left: 50px;
+    }
+    
+    .form_container > p {
+        letter-spacing: 2px;
+    }
+
+    .form_container >input {
+        border:1px solid hsl(278, 94%, 30%);
+        background-color: white;
+        width: 20rem;
+        height: 2rem;
+        border-radius: 5px;
+        color: hsl(278, 94%, 30%);
+        margin-bottom: 35px;
+    }
+    .form_container_date {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+
+    }
+
+    .form_container_date > input {
+        border:1px solid hsl(278, 94%, 30%);
+        background-color: white;
+        width: 4rem;
+        height: 2.2rem;
+        border-radius: 5px;
+        color: hsl(278, 94%, 30%);
+        margin-right: -50px; 
+    }
+
+    #year_cart {
+        width: 5rem;
+
+    }
+    .sumbit {
+        margin-top: 100px;
+        margin-left: 95px;
+    }
+    #hidden_Section {
+        margin-left: -90px;
+        margin-top: 280px;
+    }
+    .sumbit_Continue {
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+
+  

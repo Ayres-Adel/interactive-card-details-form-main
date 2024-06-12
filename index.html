@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+  <header>
+    <nav>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container_01">
+      
+      <div class="card_front">
+        <img src="./images/bg-card-front.png">
+        <div class="card_front_info">
+          <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+          <p id="Number_Card">0000 0000 0000 0000</p>
+          <div>
+            <p id="Name_Card">Jane Appleseed</p>
+            <p id="Date_Card"> 00/00</p>
+          </div>
+        </div>
+      </div>
+      <div class="card_back">
+        <img src="./images/bg-card-back.png">
+        <p id="cvc_number">000</p>
+      </div>
+    </div>
+
+    <form>
+      <div class="form_container" id="form_container">
+        <p>Cardholder Name</p>
+        <input type="text" placeholder="e.g. Jane Appleseed" id="Name_Cart"  name="Name_Cart">
+        <div id="error_Card_Name"></div>
+        <p>Card Number</p>
+        <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="Number_Cart">
+        <div id="error_Card_Number"></div>
+
+        <div class="form_container_date">
+          
+          <p>Exp.</p>
+          <p>Date (MM/YY)</p>
+          <p>CVC</p>
+         
+
+          <input type="text" placeholder="MM" id="date_number_MM">
+
+          <input type="text" placeholder="YY" id="date_number_YY">
+
+          <input type="text" placeholder="e.g. 123" id="year_cart">
+
+          <div id="error_Card_date_MM"></div>
+          <div id="error_Card_date_YY"></div>
+          <div id="error_Card_date_Year"></div>
+
+          
+
+        </div>
+        
+      
+        
+    </form>
+   
+  </div>
+
+  <button class="sumbit" id="sumbit_Confirm" onclick="SubmitBtn()">Confirm</button>
+  
+
+    <div class="hidden_Section" id="hidden_Section">
+
+      <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+      <h1>Thank you!</h1>
+      <p>We've added your card details</p>
+      <button class="sumbit_Continue" id="sumbit_Continue" >Continue</button>
+
+
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
